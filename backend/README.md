@@ -1,2 +1,0 @@
-# eccomerceWebsiteReactANDNodejs
-eccomerce website

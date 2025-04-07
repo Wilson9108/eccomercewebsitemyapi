@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # eccomerceWebsiteFullstackMyapi
 eccomerceWebsiteFullstack
 >>>>>>> ece6fc23531fad67e31a9310ee499e2a4b0d42f0
+=======
+# eccomerceWebsiteFullstackMyapi
+eccomerceWebsiteFullstack
+>>>>>>> 3882b3bb070c89198ad11ca114b6691ec4d7863f

@@ -1,0 +1,124 @@
+.productsTableContainer{
+    margin:10px 0px;
+    display: flex;
+    justify-content:center;
+    padding:50px;
+}
+table{
+    box-shadow: 0px -10px rgb(219, 197, 197);
+}
+.productsTitle{
+    margin:30px  0px;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(0, 237, 249);
+    padding: 10px;;
+    border-right: 5px solid  rgb(193, 193, 88);
+}
+.thContainer{
+    box-shadow: -5px 0px 0px rgb(13, 245, 5),
+    5px 0px 0px rgb(13,245,5);
+}
+.thContainer th{
+    text-align: center;
+    margin:20px;
+    padding:20px 0px;
+    background-color: rgb(39, 39, 28);
+    /* border:1px solid black; */
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.348);
+    color:#fff;
+    border-right: 1px solid rgb(42, 54, 65);
+
+}
+.tdContainer td{
+    margin:10px;
+    /* border:1px solid blue; */
+    box-shadow: 0px 10px 10px rgba(38, 35, 19, 0.318);
+    padding:32px 18px;
+    font-size: 12px;
+}
+.tdContainer td:hover{
+    background-color: rgba(13, 16, 19, 0.107);
+    /* text-align:center; */
+}
+.tdContainer td:focus-within{
+    background-color: rgba(82, 191, 35, 0.274);
+}
+.tdContainer td input{
+    width: 100%;
+    height: 40px;
+    border:none;
+    outline: none;
+    padding:0px 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
+.tdContainer td input:focus{
+    border-bottom: 2px solid blue ;
+}
+.errorMessage{
+    color:red;
+    letter-spacing: 1px;
+    display: inline-block;
+
+}
+.updateBtn{
+    background-color:rgb(0, 237, 249);
+    padding:8px 25px;
+    border:none;
+    outline:none;
+    box-shadow: 0px 0px 10px rgb(0,237,249);
+    transform:scale(1);
+    transition:transform 0.2s ease;
+}
+.updateBtn:hover{
+    transform:scale(1.05);
+    box-shadow:0px 0px 20px rgb(0, 232, 249)
+}
+.updateBtn:active{
+    transform:scale(0.9);
+}
+.saveBtn{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    padding:8px 35px;
+    background-color: rgba(148, 237, 15, 0.731);
+    box-shadow: 0px 0px 10px rgb(60, 182, 32);
+    border:none;
+    outline:none;
+    transform:scale(1);
+    transition:transform 0.2s ease;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    
+}
+.saveBtn:hover{
+    box-shadow: 0px 0px 15px orange;
+    transform : scale(1.05)
+}
+.saveBtn:active{
+    box-shadow: 0px 0px 5px orange;
+    transform: scale(0.9);
+}
+.deleteBtn , .cancelBtn{
+    color:#fff;
+    padding:8px 34px;
+    background-color: rgb(200, 48, 48);
+    box-shadow: 0px 0px 10px rgb(113, 47, 47);
+    border:none;
+    outline:none;
+    transform:scale(1);
+    transition:transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+}
+.deleteBtn:hover , .cancelBtn:hover{
+    background-color: red;
+    box-shadow: 0px 0px 10px red;
+    transform:scale(1.05)
+}
+.deleteBtn:active,.cancelBtn:active{
+    background-color: red;
+    box-shadow: 0px 0px 10px rgb(80, 80, 121);
+    transform:scale(0.9)
+}

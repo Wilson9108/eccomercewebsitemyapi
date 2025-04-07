@@ -1,0 +1,63 @@
+.formContainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:50px 0px;
+}
+.inputBox{
+    gap:20px;
+    background-color: rgba(0, 255, 255, 0.162);
+    padding:20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+
+}
+.categoryInput ,.addBtn{
+    height: 45px;
+    padding:0px 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+}
+.categoryInput{
+    border:1px solid rgba(0, 0, 255, 0.318);
+    border-radius:0px 0px 0px 0px;
+    outline:none;
+    border: none;
+}
+.addproducts{
+    margin-top:10px;
+    text-align: right;
+}
+.addproducts a{
+    display: inline-block;
+    text-decoration:none;
+}
+.addproducts a:hover{
+    transform:scale(1.04);
+    color:blue;
+}
+.addproducts a:active
+{
+    transform:scale(0.9);
+}
+.addBtn{
+    padding:0px 30px;
+    border-radius: 0px 30px 30px 0px;;
+    border:none; 
+    outline: none;
+    background-color: cornsilk;
+}
+.addBtn:hover{
+    background-color: rgb(215, 215, 152);
+    transform:scale(1.05);
+    transition:all 0.2s ease-in-out;
+}
+.addBtn:active{
+    background-color: rgb(215, 215, 152);
+    transform:scale(0.9);
+    transition:all 0.2s ease-in-out;
+}
+.errorMessage{
+    display: block;
+    margin:5px 0px 0px 0px;
+    color:red;
+    letter-spacing:2px;
+}

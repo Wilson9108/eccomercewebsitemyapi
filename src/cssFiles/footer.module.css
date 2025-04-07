@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+.footerHeading{
+    margin:50px 0px;
+    text-align: center;
+    border-top:2px solid #a3a5bc;
+    border-bottom:2px solid #a3a5bc;
+    padding: 40px 0px;
+}
+.footerCards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.footerCardOne{
+    width:30%;
+}
+.footerCardOne h1{
+    font-size:40px;
+    font-weight:900;
+    text-decoration: line-through;
+    margin:0px 0px 20px 0px;
+}
+.footerCardTwo,.footerCardThree,.footerCardFour{
+    width:20%;
+    /* text-align: center; */
+}
+.footerCardTwo h1 , .footerCardThree h1{
+    font-weight: 200;
+    font-size: 36px;
+}
+.footerCardTwo p , .footerCardThree p{
+    /* margin: 20px 0px 0px 0px; */
+    font-size: 13px;
+    /* text-align: center; */
+}
+.footCardFour{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.footerCardFour input{
+    padding:8px; 
+    margin:20px 0px;
+
+    /* width: 70%; */
+}
+.footerCardFour .subscribeBtn{
+    padding:10px 20px ;
+    outline:none;
+    /* border:1px solid #0075be; */
+    background-color: #0075be;
+    color:#ffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+   
+}
+.footerCardFour .subscribeBtn:hover{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+.conclusionFooter{
+    border-top:2px solid rgb(204, 155, 155);
+    padding:20px 0px;
+    text-align: center;
+    margin:20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.iconsContainer i{
+    padding:10px;
+
+}
+.iconsContainer i:hover{
+    font-size:30px;
+}
+
+
+@media screen and (width<1170px){
+    .footerCardOne , .footerCardTwo,.footerCardThree,.footerCardFour{
+        width:25%;
+    }
+}
+
+@media screen and (width<800px){
+    .footerCards{
+        flex-wrap: wrap;
+        gap:20px;
+        text-align: center;
+    }
+    .footerCardOne , .footerCardTwo,.footerCardThree,.footerCardFour{
+        width:100%;
+        /* text-align: left; */
+    }
+    .footerCardFour  form button{
+        padding:8px 3px ;
+        outline:none;
+        border:1px solid #0075be;
+        background-color: #0075be;
+        color:#ffff;
+        letter-spacing: 1px;
+        margin: 0px 0px 0px 5px;
+    }
+    .conclusionFooter {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

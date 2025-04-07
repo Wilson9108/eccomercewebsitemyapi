@@ -1,0 +1,94 @@
+
+nav{
+    background-color: #80531c;
+    /* background-color: transparent; */
+    z-index: 1;
+    user-select: none;
+}
+
+nav li{
+  font-size:1.5vmin;
+}
+  
+/* .audiowideRegular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
+   .navbarBrandOne{
+    font-size:3rem;
+    /* position: absolute; */
+    color:#958c7f;
+    text-shadow: 0px 5px rgb(118, 129, 176);
+
+   }
+.navbarBrandTwo{
+    font-size:15px;
+    font-weight:900;
+    text-decoration: line-through;
+    position:absolute;
+    left:12%;
+    top:30%;
+    border-left:2px solid rgba(240, 248, 255, 0.425);
+    border-right:2px solid rgba(207, 217, 225, 0.434);
+    color:rgb(255, 255, 255);
+
+}
+nav li a{
+  transform:scale(1);
+  transition:tranform 0.2s ease-in-out;
+
+}
+ nav li a:hover{
+   transform:scale(1.1);
+    color:rgb(14, 11, 8)
+}
+nav li a:active{
+  transform:scale(0.8);
+}
+.wilsonlogo{
+  width:100px;
+  font-size: 20px;
+  mix-blend-mode: color-burn;
+  background-color:transparent;
+  color:wheat;
+}
+
+nav form input{
+  width:70%;
+}
+nav form button:hover{
+  transform:scale(1.05);
+
+}
+nav form button:active{
+  transform:scale(0.8);
+}
+@media screen and (width <1180px){
+  nav li{
+
+    font-size:1.3vmin;
+  }
+}
+@media screen and (width <1083px ){
+   nav li  {
+    font-size:1vmin;
+
+  }
+  nav form input{
+    width: 40%;
+  }
+}
+@media screen and (width<990px){
+  nav li  {
+    font-size:2.5vmin;
+
+  }
+   nav ul{
+    text-align: center;
+    margin:0px 50px
+  }
+
+  
+}

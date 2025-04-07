@@ -1,0 +1,96 @@
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:30px 0px 0px 0px;
+}
+.tableTitle{
+    color:rgba(56, 56, 147, 0.716);
+    background-color: aliceblue;
+    padding: 20px;
+    font-weight: 900;
+}
+thead{
+    background-color: rgb(114, 76, 76);
+    box-shadow: 0px 15px 10px rgb(184, 189, 196);
+}
+
+.userDataTableRow th{
+    text-align:center;
+    font-size:2vmin;
+    padding:30px 0px;
+    color:white;
+    box-shadow: 0px 0px 20px rgba(49, 45, 19, 0.494);
+}
+/* form{
+    display: inline;
+} */
+
+.userDataTableRowOne td{
+    border-right: 1px solid rgba(2, 130, 249, 0.359);
+    border-bottom: 1px solid yellow;
+    /* margin: 50px; */
+    padding:20px 20px;
+    font-size:1.5vmin;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.343);;
+    border-radius: 1px ;
+}
+.userDataTableRowOne td:hover{
+    /* transform:scale(1.2); */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.187);
+}
+.userDataTableRowOne td input{
+    padding:15px 10px;
+    border:none;
+    outline:none;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.443);
+    transform: scale(1);
+    border-radius: 0px 0px 2px 3px;
+}
+.userDataTableRowOne td input:focus{
+    border-bottom: 2px solid blue;
+}
+.userDataTableRowOne td:focus-within{
+    background-color: rgba(108, 108, 61, 0.578);
+}
+.errorMessage{
+    color:red;
+    display: block;
+    margin: 5px 0px 0px;;
+    /* font-size: 10px; */
+}
+.updateBtn{
+    border:none;
+    outline:none;
+    background-color:bisque;
+    padding:10px 20px;
+    transform:scale(1);
+    transition:transform 0.2s ease-in-out;
+    display: inline-block;
+    text-decoration:none;
+    color:black;
+}
+.deleteBtn{
+    border:none;
+    outline:none;
+    background-color:rgb(205, 26, 26);
+    padding:10px 20px;
+    color: white;
+    transform:scale(1);
+    transition:transform 0.2s ease-in-out;
+}
+.updateBtn:hover{
+    transform:scale(1.1);
+    background-color:rgb(230, 189, 139);
+}
+.updateBtn:active{
+    transform:scale(0.9)
+}
+.deleteBtn:hover{
+    transform:scale(1.1);
+    background-color:red;
+}
+.deleteBtn:active{
+    transform:scale(0.9);
+}

@@ -1,0 +1,215 @@
+
+/* ///products section */
+
+.productsContainer{
+    width:100%;
+    /* height: 800px; */
+    margin:50px 0px ;
+}
+.productsTitleCon{
+    padding:30px 0px;
+    text-align: center;
+    color:rgb(138, 138, 99);
+    display:flex;
+    justify-content:center;
+    margin:0px 0px 0px 10px;
+}
+.productsTitleCon>h1{
+    position:relative;
+    font-size:2vmin;
+    margin: 0px 20px  10px 20px;
+}
+.productsTitleCon a{
+    text-decoration: none;
+    color:rgb(138, 138, 99)
+}
+.productsTitleCon a:hover{
+    display: inline-block;
+    transform:scale(1.1);
+    /* color:rgb(213, 213, 30); */
+}
+.productsTitleCon a:active{
+    transform:scale(0.9);
+}
+
+.productsTitleCon>h1:after{
+    content:"";
+    height: 2px;
+    width: 50px;
+    position:absolute;
+    bottom:-20px;
+    left:50%;
+    background-color: rgb(126, 122, 155);
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.productsCards{
+    /* margin:20px 0px 10px 0px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    padding:20px;
+    margin:0px 0px;
+
+}
+.productBox{
+    margin:30px 40px;
+    padding:10px;
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+    /* flex-grow: 0.5;/ */
+    /* flex-basis: 300; */
+    /* background-color: #316b84; */
+
+}
+.productBox:hover{
+    transform:scale(1.05);
+}
+.cardImg{
+    height:200px;
+    width:220px;
+}
+.cardBody{
+    height: 180px;
+    width:250px;
+}
+.cardBody>h5{
+    margin:10px 0px;
+    font-size:1.5vmin
+}
+.cardBody p{
+    margin:0;
+}
+.AddToCartBtn{
+    margin:5px 0px;
+    text-decoration: none;
+    color:black;
+    padding:10px 10px;
+    background-color: rgba(0, 185, 0, 0.579);
+    border-radius: 8px  0px 10px 10px;
+}
+.AddToCartBtn:active{
+    background-color: rgb(98, 89, 7);
+    color: white;
+}
+.productsViewMore{
+    text-align: center;
+}
+.productsViewMore a{
+    padding:10px 20px;
+    text-decoration:none;
+    background-color: #316b84;
+    color:#fff;
+}
+.productsViewMore a:hover{
+    background-color: black;
+    color:#fff;
+
+}
+.starRating{
+    display: inline-block;
+    font-size:22px;
+    margin:0px 0px 20px 0px;
+}
+
+@media screen and (width<630px) {
+
+    .cardImg{
+        height: 200px;
+        width:90%;
+    }
+    .cardBody{
+        height: 200px;
+        width:90%;
+    }
+    .cardBody>h5{
+        margin:10px 0px;
+        font-size:2vmin
+    }
+    .productBox{
+        margin:20px 40px;
+        padding:10px;
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+        flex-grow: 0.5;
+        /* flex-basis: 300; */
+    
+    }
+    .productsCards{
+        /* margin:20px 0px 10px 0px; */
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap;
+        padding:20px;
+    
+    }
+
+    
+ }
+ @media screen and (width<1000px){
+    .productsCards{
+        /* margin:20px 0px 10px 0px; */
+        display: flex;
+         justify-content: center;
+         align-items: center; 
+        flex-wrap: wrap;
+        padding:20px;
+    
+    }
+ }
+ @media screen and (width<630px) {
+    .productsTitleCon h1{
+        font-size:2vmin;
+        margin:0px 10px 0px 5px;
+    }
+
+ }
+
+@media screen and (width<400px) {
+    .AddToCartBtn{
+        margin:5px 0px;
+        text-decoration: none;
+        color:black;
+        padding:8px 10px;
+        background-color: rgba(0, 185, 0, 0.579);
+        border-radius: 8px  0px 10px 10px;
+        font-size: 1.5vmin;
+    }
+    .productBox{
+        margin:20px 40px;
+        padding:10px;
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+        flex-grow: 1;
+        /* flex-basis: 300; */
+    
+    }
+    
+ }
+ @media screen and (width<450px) {
+    .productsTitleCon h1{
+        font-size:5vmin;
+        margin:0px 5px 0px 0px;
+        width: 100%;
+        margin:10px 0px;
+        text-decoration:underline;
+        line-height: 20px;
+      
+    }
+    .productsTitleCon>h1:after{
+        content:"";
+        height: 2px;
+        width: 0px;
+        position:absolute;
+        bottom:-20px;
+        left:50%;
+        background-color: rgb(126, 122, 155);
+        text-align: center;
+        transform: translate(-50%,-50%);
+    }
+    
+
+    
+ }

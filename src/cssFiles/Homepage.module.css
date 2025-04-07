@@ -1,0 +1,547 @@
+*{
+    box-sizing:border-box;
+    flex-wrap: wrap;
+}
+.homeContainer{
+    /* width:100vw; */
+}
+.headerContent{
+    position:absolute;
+    top:40%;
+    left:10%;
+}
+.headerOne{
+    color:#fff;
+    font-size:66px;
+}
+.headerTwo{
+    color:#fff;
+    font-size:66px;
+}
+.headerThree{
+    color:#fff;
+    margin:50px 0px;
+    font-size:20px;
+}
+.headerImgCon{
+    width:100%;
+    height: 800px;  
+    margin: 0px 0px 70px 0px;
+}
+.btnContainer{
+    margin:0px 0px 50px 0px;
+
+}
+.shopNowBtn{
+    padding:13px 20px;
+    text-decoration: none;
+    background-color:transparent;
+    border:1px solid aliceblue;
+    color:#fff;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    /* display: inline-block; */
+    /* z-index: 1; */
+}
+
+
+.shopNowBtn:hover{
+    background-color: #316b84;
+    color:#000;
+    transition:all 0.5s ease;
+    border:none;
+}
+
+.findMoreBtn{
+    padding:12px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    color:#fff;
+    font-weight: 600;
+    margin:0px 20px;
+    border:1px solid #fff;
+}
+
+.findMoreBtn:hover{
+    background-color: #fff;
+    color:#000;
+    transition:all 0.5s ease;
+}
+.headerImg{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.301),rgb(28, 12, 12)),url("../Images/homepageHeaderImg.jpg");
+    background-repeat:no repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* animation:slide 15s linear infinite; */
+    animation: 8s linear 1s infinite alternate slide;
+}
+/* cards section */
+
+.cardContainer{
+    width:100%;
+    /* height: 600px; */
+    padding:0px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    gap:15px;
+   margin:0px 0px 0px 0px;
+   box-sizing: border-box;
+}
+
+.cardOne{
+    height:80%;
+    width:30%;
+    background:linear-gradient(rgba(0, 0, 0, 0.289),rgba(0, 0, 0, 0.658)),url("../Images/HomepageCardImgOne.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px 20px 20px 30px;
+    
+}
+.cardTwo{
+    height: 80%;
+    width:30%;
+    background:linear-gradient(rgba(0, 0, 0, 0.289),rgba(0, 0, 0, 0.658)),url("../Images/homepageCardImgTwo.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* padding:20px 20px 40px 30px; */
+    padding:50px 40px;
+}
+.cardThree{
+    height:90%;
+    width:30%;
+    background:linear-gradient(rgba(0, 0, 0, 0.289),rgba(0, 0, 0, 0.658)),url("../Images/homepageCardImgThree.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding:20px 20px 20px 30px;
+
+}
+
+.cardContent{
+    position: relative;
+    top:40%;
+    padding:0px 20px;
+    cursor: pointer;
+}
+.cardContent > *:not(h2,a){
+    opacity: 0;
+    transform:translateY(100px)
+}
+.cardContent>*:not(p,a){
+    opacity: 0.5;
+    transition:all 0.5s ease-in;
+}
+
+.cardContent:hover>*{
+    transform:translateY(0px);
+    opacity: 1;
+    transition:all 0.5s ease-in-out;
+}
+.cardContent:hover h2{
+    font-size:35px;
+    transition: all 0.5s ease-in-out;
+}
+.cardContent>h2{
+    margin:0px 0px 10px 0px;
+}
+.cardContent>p{
+    margin:0px 0px 30px 0px;
+    font-weight: 500;
+}
+.cardBtn{
+    padding:10px 20px;
+    text-decoration: none;
+    color:#000;
+    background-color: #fff;
+}
+.cardBtn:hover{
+    background-color: black;
+    color: #fff;
+    transition:all 0.5s ease;
+}
+
+
+/* ///products section */
+
+.productsContainer{
+    width:100%;
+    /* height: 800px; */
+    margin:50px 0px ;
+}
+.productsTitleCon{
+    padding:30px 0px;
+    text-align: center;
+    color:rgb(138, 138, 99)
+}
+.productsTitleCon>h1{
+    position:relative;
+}
+.productsTitleCon>h1:after{
+    content:"";
+    height: 2px;
+    width: 200px;
+    position:absolute;
+    bottom:-20px;
+    left:50%;
+    background-color: rgb(126, 122, 155);
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.productsCards{
+    /* margin:20px 0px 10px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:20px;
+}
+.productBox{
+    margin:20px 40px;
+    padding:10px;
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+    /* flex-grow: 1; */
+
+}
+.productBox:hover{
+    transform:scale(1.05);
+}
+.cardImg{
+    height:200px;
+    width:220px;
+}
+.cardBody{
+    height: 150px;
+    width:250px;
+}
+.cardBody>h5{
+    margin:10px 0px;
+    font-size:1.5vmin
+}
+.cardBody p{
+    margin:0;
+}
+.AddToCartBtn{
+    margin:5px 0px;
+    text-decoration: none;
+    color:black;
+    padding:10px 10px;
+    background-color: rgba(0, 185, 0, 0.579);
+    border-radius: 8px  0px 10px 10px;
+}
+.AddToCartBtn:active{
+    background-color: rgb(98, 89, 7);
+    color: white;
+}
+.productsViewMore{
+    display: block;
+    text-align: center;
+    margin:50px 0px;
+}
+.productsViewMore a{
+    padding:10px 20px;
+    text-decoration:none;
+    background-color: #316b84;
+    color:#fff;
+}
+.productsViewMore a:hover{
+    background-color: black;
+    color:#fff;
+    transition: all  0.5s ease;
+}
+
+
+/* limited offer section */
+
+.limitedOfferContainer{
+    width:100%;
+    height: 600px;
+    position:relative;
+}
+.offerImage{
+    height: 500px;
+    width: 100%;
+    background:url("../Images/homepageOfferImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.offerContent{
+    position:absolute;
+    top:20%;
+    left:5%;
+    color:#fff;
+}
+
+.offerShopNowBtn{
+    text-decoration: none;
+    padding:12px 20px;
+    background-color: white;
+}
+.offerShopNowBtn:hover{
+    background-color:black;
+    color:#fff;
+}
+
+/* ending section */
+
+.conclusionCards{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.endingCard{
+    /* height: 200px; */
+    width:22%;
+    /* background-color: beige; */
+    /* margin: 10px; */
+    text-align: center;
+    padding:20px;
+}
+.endingCard i{
+    font-size:3rem;
+    margin:50px 0px;
+    color: rgb(38, 83, 82);
+}
+.endingCard h3{
+    font-size: 2vmin;
+    font-weight: 900;
+}
+.endingCard p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+@media screen and (width<1000px){
+    .headerContent{
+        position:absolute;
+        top:65%;
+        left:10%;
+    }
+    .headerOne , .headerTwo{
+        font-size: 50px;
+    }
+    .shopNowBtn{
+        padding:10px 20px;
+
+    }
+    .findMoreBtn{
+        padding:10px 20px;
+    }
+    .cardContent{
+        /* height: 0px; */
+        position: relative;
+        top:30%;
+        padding:0px 20px;
+    }
+    .cardContent>h2{
+        margin:0px 0px 10px 0px;
+        font-size:25px;
+    }
+    .cardContent>p{
+        margin:0px 0px 30px 0px;
+        font-weight: 500;
+        font-size:16px;
+    }
+    .cardBtn{
+        padding:8px 10px;
+        text-decoration: none;
+        color:#000;
+        background-color: #fff;
+        font-size:1.5vmin;
+    }
+}
+
+ @media screen and (width<790px){
+    .headerContent{
+        position:absolute;
+        top:55%;
+        left:10%;
+    }
+    .cardContainer{
+        display:flex;
+        flex-wrap: wrap;
+        /* background-color: black; */
+    }
+    .cardOne{
+        height:100%;
+        width:100%;
+        background:linear-gradient(rgba(0, 0, 0, 0.289),rgba(0, 0, 0, 0.658)),url("../Images/HomepageCardImgOne.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:50px;
+    }
+    .cardTwo{
+    
+        height: 80%;
+        width:100%;
+        background:linear-gradient(rgba(0, 0, 0, 0.289),rgba(0, 0, 0, 0.658)),url("../Images/homepageCardImgTwo.jpg");
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding:70px 0px;
+    }
+    .cardThree{
+        height: 80%;
+        width:100%;
+        background:linear-gradient(rgba(0, 0, 0, 0.289),rgba(0, 0, 0, 0.658)),url("../Images/homepageCardImgThree.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding:50px;
+    
+    }
+    .endingCard{
+        width:100%;
+        text-align: center;
+        padding:20px;
+    }
+    .endingCard h3{
+        font-size: 3vmin;
+    }
+
+ }
+
+ @media screen and (width<690px) {
+    .headerOne{
+        color:#fff;
+        font-size:8vmin;
+    }
+    .headerTwo{
+        color:#fff;
+        font-size:8vmin;
+    }
+    .headerThree{
+        color:#fff;
+        margin:30px 0px;
+        font-size:5vmin;
+    }
+
+    .shopNowBtn{
+        padding:8px 15px;
+        text-decoration: none;
+        background-color:#fff;
+        color:#000;
+        font-weight: 600;
+    }
+    .findMoreBtn{
+        padding:8px 15px;
+        text-decoration: none;
+        background-color: transparent;
+        color:#fff;
+        font-weight: 600;
+        margin:0px 20px;
+        border:1px solid #fff;
+    }
+    /* .cardImg{
+        height: 200px;
+        width:90%;
+    }
+    .cardBody{
+        height: 200px;
+        width:90%;
+    }
+    .cardBody>h5{
+        margin:10px 0px;
+        font-size:2vmin
+    } */
+
+    
+ }
+ @media screen and (width<400px) {
+    .btnContainer{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .shopNowBtn{
+        display:block;
+        padding:8px 15px;
+        text-decoration: none;
+        background-color:#fff;
+        color:#000;
+        font-weight: 600;
+        width: 50vw;
+        margin: 20px 0px;
+
+    }
+    .findMoreBtn{
+        display: block;
+        padding:8px 15px;
+        text-decoration: none;
+        background-color: transparent;
+        color:#fff;
+        font-weight: 600;
+        margin:0px 20px;
+        border:1px solid #fff;
+        width: 50vw;
+    }
+    .AddToCartBtn{
+        margin:5px 0px;
+        text-decoration: none;
+        color:black;
+        padding:8px 10px;
+        background-color: rgba(0, 185, 0, 0.579);
+        border-radius: 8px  0px 10px 10px;
+        font-size: 1.5vmin;
+    }
+    
+ }
+
+ @keyframes slide{
+    25%{
+
+            width:100%;
+            height:100vh;
+            background:linear-gradient(rgba(0, 0, 0, 0.693),rgba(28, 12, 12, 0.83)),url("../Images/headerImage02.avif");
+            background-repeat:no repeat;
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+    }
+    50%{
+
+            width:100%;
+            height:100vh;
+            background:linear-gradient(rgba(0, 0, 0, 0.301),rgb(28, 12, 12)),url("../Images/headerImage03.avif");
+            background-repeat:no repeat;
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        
+    }
+    75%{
+
+            width:100%;
+            height:100vh;
+            background:linear-gradient(rgba(0, 0, 0, 0.301),rgb(28, 12, 12)),url("../Images/headerImage04.avif");
+            background-repeat:no repeat;
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+
+    }
+    100%{
+
+            width:100%;
+            height:100vh;
+            background:linear-gradient(rgba(0, 0, 0, 0.422),rgba(28, 12, 12, 0.501)),url("../Images/headerImage05.avif");
+            background-repeat:no repeat;
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+
+    }
+ }

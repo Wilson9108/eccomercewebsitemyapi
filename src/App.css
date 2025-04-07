@@ -1,0 +1,12 @@
+body {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+  }
+  i{
+    cursor:pointer;
+    user-select: none;
+  }
+
+  

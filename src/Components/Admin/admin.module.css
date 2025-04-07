@@ -1,0 +1,139 @@
+.formContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    background-color: rgba(128, 128, 128, 0.056);
+
+}
+.formBox{
+    margin:100px 0px;
+    background-color:#ffffff;
+    padding:20px;
+    border-radius:0px 10px 20px 30px;
+    box-shadow:5px 0px rgba(0, 0, 0, 0.426),
+    -5px 0px rgba(0, 0, 255, 0.122),
+    0px 5px blanchedalmond,
+    0px -5px rgba(137, 43, 226, 0.726);
+    width: 500px;
+}
+
+.inputGroup{
+
+}
+
+form{
+    /* width: 400px; */
+    padding:10px 20px;
+}
+.formTitle{
+    text-align: center;
+    margin:0px 0px 50px 0px;
+    font-size:40px;
+    font-weight: 900;
+    color:transparent;
+    text-shadow: 0px 8px 5px  rgba(179, 188, 169, 0.518);
+    position: relative;
+    background: url("https://i.pinimg.com/736x/42/0e/d7/420ed7c8b034af26c7c05934ceacd9fc.jpg");
+    background-clip: text;
+    background-size: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    /* -webkit-background-clip: text; */
+}
+.formTitle::after{
+    content: "";
+    height: 5px;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    /* background-color: rgb(170, 112, 112); */
+    background: url("https://i.pinimg.com/736x/42/0e/d7/420ed7c8b034af26c7c05934ceacd9fc.jpg");
+    background-size:cover;
+    color:black;
+    width:150px;
+    transform:translate(-50%);
+    border-radius:50%;
+}
+.formTitle:hover::after{
+    width:250px;
+    border-radius: 50%;
+    transition: width 0.5s  ease-in-out;
+   
+}
+.inputBox{
+    margin: 20px 0px ;
+    position: relative;
+}
+.field , .btnField{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px 20px 20px 0px;;
+    border:none;
+    outline:none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+    padding:0px 10px;
+    transition:border 0.2s ease-in-out;
+}
+.field:focus{
+    border-right: 4px solid rgb(7, 204, 66);
+    border-left: 2px solid green;
+}
+.field:focus::placeholder{
+    font-size:13px;
+}
+.eyeIcon{
+    position: absolute;
+    top:20%;
+    right:10px;
+}
+.errorMessage{
+    color:red;
+    margin:10px 0px 0px 0px;
+    display: inline-block;
+}
+.btnField{
+    background-color: rgba(0, 128, 0, 0.784);
+    color:#fff;
+    transition: transform 0.1s ease-in-out;
+}
+.btnField:hover{
+    transform: scale(1.05);
+    
+    box-shadow: 0px 0px 10px rgb(16, 238, 16);
+}
+.btnField:active{
+    transform: scale(0.8);
+    font-size: 12px;
+}
+.accountExist{
+    text-align:right;
+}
+.accountExist a{
+    display: inline-block;
+    text-decoration: none;
+    padding:5px 30px;
+    background-color: gray;
+    transform: scale(1.1);
+    margin : 0px 0px 0px 5px;
+    color:white;
+    letter-spacing: 1px;
+    border-radius: 10px 20px 20px 0px;;
+}
+.accountExist a:hover{
+    transform: scale(1.2);
+}
+.accountExist a:active{
+    transform:scale(0.9);
+}
+@media screen and (width<500px) {
+
+    form{
+        width:80vw;
+    }
+    .formTitle{
+        font-size:10vmin;
+    }
+    
+}
+

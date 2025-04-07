@@ -1,0 +1,273 @@
+
+*{
+    box-sizing: border-box;
+}
+/* nav{
+    background-color: #595747;
+} */
+.header h1{
+    position:absolute;
+    top:20%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%);
+    color:#ffffff;
+    font-size: 50px;
+}
+.headerImg{
+    width: 100%;
+    height: 600px;
+    background:linear-gradient(rgba(43, 41, 41, 0.457),rgba(0, 0, 0, 0.72)),url("../Images/aboutusHeaderImg01.avif") no-repeat center; 
+    background-size:cover;
+    background-attachment: fixed;
+     box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.264);
+     animation:5s linear 1s infinite alternate slide;
+     
+}
+.aboutUsBox{
+    margin:100px 0px;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    background-color: rgba(196, 184, 184, 0.1);
+    padding: 30px 0px;
+}
+.aboutContent{
+    width: 40%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+    padding: 20px;
+   cursor:pointer;
+}
+.aboutContent:hover{
+    word-spacing: 10px;
+    transition: all 0.5s ease;
+}
+#content:first-letter{
+    font-size:2rem;
+    color: aqua;
+    padding:5px;
+}
+#content{
+    text-wrap: balance;
+}
+.aboutContent h1{
+    position: relative;
+    margin: 0px 0px 30px 0px;
+    color:rgb(118, 118, 76);
+}
+.aboutContent h1:after{
+    content: "";
+    height: 4px;
+    position: absolute;
+    top:-10px;
+    left:0;
+    background-color: cadetblue;
+    width: 100px;
+}
+.aboutContent p{
+    font-weight: 200;
+    font-size: 1.5vmin;
+}
+.aboutImg{
+    height:400px;
+    width: 40%;
+    background: linear-gradient(rgba(174, 149, 149, 0.352),rgba(0, 0, 0, 0.78)),url("../Images/aboutImg.jpg") no-repeat center;
+    background-size:cover;
+    /* box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.54); */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+}
+
+.ourTeamHeadingOne{
+    text-align: center;
+    color:rgb(5, 236, 213);
+}
+.ourTeamHeadingTwo{
+    text-align: center;
+    margin:20px 0px;
+    color:rgb(118, 118, 76)
+    
+}
+.ourTeamHeadingThree{
+    margin:20px 0px;
+    text-align: center;
+    font-size: 12px;
+    color:rgb(8, 80, 73);
+}
+.ourTeamProfiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profileOne{
+    width: 300px;
+    /* background-color: rgba(214, 209, 202, 0.31); */
+    background-color: rgb(245, 247, 249);
+    margin:50px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.291);
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+
+}
+.profileOne>.img{
+    height: 120px;
+    width:120px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgb(150, 162, 19); 
+}
+.profileOne:hover{
+    transform: scale(1.1);
+}
+.aboutusEndingBox{
+    /* margin:50px 0px ; */
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.endingImgOne{
+    width:35%;
+    height: 400px;
+    background-image:url("https://images.unsplash.com/photo-1530099486328-e021101a494a?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    padding:50px 0px;
+}
+.followUsCard{
+    width:30%;
+    /* height: 400px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    position:relative;
+}
+.followUsHeadingContainer{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%)
+}
+.followUsHeading{
+    width: 100%;
+    text-align: center;
+    font-size: 4vmin;
+}
+.followUsIconContainer{
+    position:absolute;
+    top:72%;
+    left:50%;
+    transform: translate(-50%);
+
+}
+.followUsCard i{
+    font-size: 25px;
+    margin: 0px 20px 0px 20px;
+}
+.followUsCard i:hover{
+    transform:scale(1.2);
+    color: rgb(29, 56, 210);
+}
+.endingImgTwo{
+    width:35%;
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed ;
+    padding:50px 0px;
+
+}
+
+@media screen and (width<750px) {
+
+    
+}
+
+@media screen and (width<600px){
+    .aboutContent{
+        width: 90%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+        padding: 20px;
+       
+    }
+    .aboutContent p{
+        font-weight: 200;
+        font-size: 3vmin;
+    }
+    .aboutImg{
+        height:400px;
+        width: 90%;
+        background: linear-gradient(rgba(174, 149, 149, 0.352),rgba(0, 0, 0, 0.78)),url("../Images/aboutImg.jpg") no-repeat center;
+        background-size:cover;
+        /* box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.54); */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+    }
+    .followUsCard i{
+        font-size: 5vmin;
+
+    }
+
+}
+
+@media screen and (width<400px){
+    .aboutContent p{
+        font-weight: 200;
+        font-size: 3vmin;
+    }
+
+    .followUsHeading{
+        font-size:5vmin;
+    }
+
+}
+
+@keyframes  slide {
+    25%{
+        width: 100%;
+        height: 600px;
+        background:linear-gradient(rgba(43, 41, 41, 0.457),rgba(0, 0, 0, 0.72)),url("../Images/aboutusHeaderImg02.avif") no-repeat center; 
+        background-size:cover;
+        background-attachment: fixed;
+         box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.264);
+
+    }
+    50%{
+        width: 100%;
+        height: 600px;
+        background:linear-gradient(rgba(43, 41, 41, 0.457),rgba(0, 0, 0, 0.72)),url("../Images/aboutusHeaderImg03.avif") no-repeat center; 
+        background-size:cover;
+        background-attachment: fixed;
+         box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.264);
+
+    }75%{
+        width: 100%;
+        height: 600px;
+        background:linear-gradient(rgba(43, 41, 41, 0.457),rgba(0, 0, 0, 0.72)),url("../Images/aboutusHeaderImg04.avif") no-repeat center; 
+        background-size:cover;
+        background-attachment: fixed;
+         box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.264);
+
+    }
+    100%{
+        width: 100%;
+        height: 600px;
+        background:linear-gradient(rgba(43, 41, 41, 0.457),rgba(0, 0, 0, 0.72)),url("../Images/aboutusHeaderImg05.avif") no-repeat center; 
+        background-size:cover;
+        background-attachment: fixed;
+         box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.264);
+
+    }
+    
+}
